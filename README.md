@@ -13,7 +13,7 @@ Run the following command in the app's directory to run your web app.
 Then, go to http://127.0.0.1:5000
 
 ## Project Screenshots:
-![image1](https://github.com/pouyanebrahimi/Disaster-Response-Pipeline/blob/master/images/img.png?raw=true)
+![image1](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Screenshot.PNG?raw=true)
 
 ## Project Motivation
 The goal of this project is to employ Data Science to build and deploy a Machine Learning Model that can predict a car price, and ultimately suggest buyers a list of best value used cars they can buy.
