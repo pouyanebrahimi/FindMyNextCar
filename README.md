@@ -1,4 +1,31 @@
-# Find My Next Car Project
+
+# Capstone Project
+Machine Learning Project            Pouyan Ebrahimi         Nov 19, 2019
+
+                            # Find My Next Car Project!           
+
+# Definition
+## Project Overview
+## Problem Statement 
+## Metrics
+
+# Analysis
+## Data Exploration
+## Exploratory Visualization
+## Algorithm and Techniques 
+## Benchmark
+
+# Methodology
+## Data Processing
+## Implementation
+## Refinement
+## Justification
+
+# Conclusion
+## Free-form of Visulaziation
+## Reflection
+## Improvement
+
 
 ## Installations
 Please install python (python-3.7.1) and import following packages and libraries: bokeh, Click==7.0, dill==0.2.9, Flask==1.0.2, itsdangerous==1.1.0, Jinja2==2.10
