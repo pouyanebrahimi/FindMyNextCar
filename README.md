@@ -2,7 +2,7 @@
 # Capstone Project
 Machine Learning Project            Pouyan Ebrahimi         Nov 19, 2019
 
-                            # Find My Next Car Project!           
+   # Find My Next Car Project!           
 
 # Definition
 ## Project Overview
