@@ -2,9 +2,11 @@
 # Capstone Project
 Machine Learning Project            Pouyan Ebrahimi         Nov 19, 2019
 
-  
+<h1 align="center">Find My Next Car Project!</h1>
+
+
 <p align="center">
-# Find My Next Car Project!
+Find My Next Car Project!
 </p>
 
 # Definition
