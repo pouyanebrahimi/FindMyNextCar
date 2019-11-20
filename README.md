@@ -37,18 +37,20 @@ Retrieving Data is the important step that should be done in the fastest possibl
 Figures 2 and 3 respectively show that how the price of cars are related to the year and model of cars.Figure 2 shows that, for most cases, newer cars are more expensive. Figure 3 shows that most models of most companies are within certain ranges, except Ford F 350 and Cadillac Escalade. The range of prices for these two models are more than all other cars!
 
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual1.png?raw=true)
-*Fig. 2. ttt*
+*Fig. 2. Year_Built vs. Price (USD)*
 
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual3.png?raw=true)
-*Fig. 3. ffff*
+*Fig. 3. Price (USD) vs. Car Model*
 
 Figure 4 shows that how year, mileage and price of cars are corolated to each other. As it is expected, newer cars has higher prices and the cars with higher mileages are cheaper. 
+
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual2.png?raw=true)
-*Fig. 4. ggg*
+*Fig. 4. Heatmap for finding correlation between price, mileage and year*
 
 Figure 5 depicts that how title status is related to the models. Apperantly more cars models are chosen for lien compared to clean titles!
+
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual4.png?raw=true)
-*Fig. 5. hhhh*
+*Fig. 5. Vilion plot: Car Title vs. Model*
 
 ## Algorithm and Techniques 
 ## Benchmark
@@ -67,15 +69,18 @@ The price prediction model is trained on various fetures: ‘Model Year’, ‘M
 
 Usually we split our data into three parts : Training , validation and Testing set, but for simplicity we will use only train and test with 20% in test size, and the rest for training.
 ## Free-form of Visulaziation
+Figures 6 and 7 compare the price of actual and predicted cars using the machine learning algorithm. 
+
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual4.png?raw=true)
-*Fig. 6. Results*
+*Fig. 6. Actual and Predicted comparision using Mileage vs. Price*
 
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Results2.png?raw=true)
-*Fig. 7. Results*
+*Fig. 7. Actual and Predicted comparision using Year_Built vs. Price*
 
 Once we are done with price prediction, now it is time to decide which used cars are best to buy. In order to do that, the optimizer gets various parameter from the user. First, the avaiable budget and, second, a price margin that defines a range. The model creates a list of all possible selection of used cars using this information. Third and forth are the number miles that the buyers plan to drive the car annually and the number of years that the car is planned to be kept. These parameters help to determine the total cost of keeping the car. Value loss, maitainance costs and repair costs, all contribute to the total cost.
 
 Finally, total cost of keeping the assiciated with each car in the selection of possible cars in the price range will be predicted and given as a sortable list to the user.  
+
 ## Improvement
 This project only consider, four factors (‘Model Year’, ‘Make’, ‘Model’,‘Mileage’) for predicting the next car for a new buyer. Besides, it is only considering the clean titled cars! However, we know there may be other factors involved in buying a better car such as: how the owner took care of car (such as oil change periods), what is the condition of breaks, tires, battey and so on. I eliminated these items because in the reality new buyers are not aware of those factors. If you visit the kbb website, you will anticipate the price of cars based on their general conditions such as "excellent condution" or "poor conditions." All in all, I would say this project is a good start for a broader and more precise type of project. 
 
