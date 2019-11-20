@@ -34,10 +34,12 @@ Then, go to http://127.0.0.1:5000
 ## Data Exploration and Exploratory Visualization
 Retrieving Data is the important step that should be done in the fastest possible way. For this purpose “BeautifulSoup” was used to scrape information of the listed cars on craigslist.org. The process for this task is quite simple, first we loop over the ads pages in order to collect the ads URLs by incrementing the page number parameter called oin the base URL. Once the URLs is collected, data about the car posted in that ad, such as : ‘Model Year’, ‘Make’, ‘Model’,‘Mileage’, ‘Price’ …, are stored in a SQL database. 
 
-Figures 2 and 3 respectively show that how the price of cars are related to the year and model of cars.Figure 2 shows that, for most cases, newer cars are more expensive. Figure 3 shows that most models of most companies are within certain ranges, except Ford F 350 and Cadillac Escalade. The range of prices for these two models are more than all other cars!
+Figure 2 shows that, for most cases, newer cars are more expensive. 
 
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual1.png?raw=true)
 *Fig. 2. Year_Built vs. Price (USD)*
+
+Figure 3 shows that most models of most companies are within certain ranges, except Ford F 350 and Cadillac Escalade. The range of prices for these two models are more than all other cars!
 
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual3.png?raw=true)
 *Fig. 3. Price (USD) vs. Car Model*
