@@ -12,7 +12,7 @@ The goal of this project is to employ Data Science to build and deploy a Machine
 Suggest the best cars that a person can buy based on some criteria. 
 
 ## Metrics or Scoring
-There are different methods for scoring the machine learning algirthms. Here I used accuracy_score, mean_squared_error, and cross_val_score to score the results of machine learning algorithm.
+There are different methods for scoring the machine learning algirthms. Here I used accuracy_score, mean_squared_error, r2 square and cross_val_score to score the results of machine learning algorithm.
  
 ## Installations
 Please install python (python-3.7.1) and import following packages and libraries: bokeh, Click==7.0, dill==0.2.9, Flask==1.0.2, itsdangerous==1.1.0, Jinja2==2.10
@@ -32,45 +32,47 @@ Then, go to http://127.0.0.1:5000
 
 # Analysis
 ## Data Exploration and Exploratory Visualization
-![image2](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Screenshot.PNG?raw=true)
-![image3](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Screenshot.PNG?raw=true)
+Retrieving Data is the important step that should be done in the fastest possible way. For this purpose “BeautifulSoup” was used to scrape information of the listed cars on craigslist.org. The process for this task is quite simple, first we loop over the ads pages in order to collect the ads URLs by incrementing the page number parameter called oin the base URL. Once the URLs is collected, data about the car posted in that ad, such as : ‘Model Year’, ‘Make’, ‘Model’,‘Mileage’, ‘Price’ …, are stored in a SQL database. 
+![](2)
+*Fig. 2. ttt*
+
+![](3)
+*Fig. 3. ggg*
+
+![](4)
+*Fig. 4. ffff*
+
+![](5)
+*Fig. 5. hhhh*
+
 ## Algorithm and Techniques 
 ## Benchmark
 
 # Methodology
 ## Data Processing
-## Implementation
-## Refinement
-## Justification
-
-# Conclusion
-## Free-form of Visulaziation
-## Reflection
-## Improvement
-
-
-
-
-
-## Data Descriptions
-Retrieving Data is the important step that should be done in the fastest possible way. For this purpose “BeautifulSoup” was used to scrape information of the listed cars on craigslist.org. The process for this task is quite simple, first we loop over the ads pages in order to collect the ads URLs by incrementing the page number parameter called oin the base URL. Once the URLs is collected, data about the car posted in that ad, such as : ‘Model Year’, ‘Make’, ‘Model’,‘Mileage’, ‘Price’ …, are stored in a SQL database. The next step is the most time consuming in every Data Science process which is Data Preprocessing & Cleansing. Information about 2 Million cars were scraped initially, which around 800,000 healthy pages were retreieved from.
+The next step is the most time consuming in every Data Science process which is Data Preprocessing & Cleansing. Information about 2 Million cars were scraped initially, which around 800,000 healthy pages were retreieved from.
 
 Armed with this information, you can make the necessary changes to your inventory. For example, only cars with a "clean" title were used in the modeling step.
 
-## How to Interact with this project
-### Price Prediction
-
 Now we came to the main task in all this process, which is Data Modeling, for this purpose a Multi-layer Perceptron (MLP) regressor Machine Learning models dedicated for Regression problem. r2_score for out-of-sample testing was 0.88.
+## Justification
 
+# Conclusion
 The price prediction model is trained on various fetures: ‘Model Year’, ‘Make’, ‘Model’,‘Mileage’. The corrolation matrix suggested that,‘Model Year’, not surprisingly, has the most contribution to the price prediction. StandardScalar was used to normalize ‘Model Year’ and ‘Mileage’. In order to make rest of the features numerical, so that they will fit into our model, OneHotEncoder categorical variable transformation was used.
 
 Usually we split our data into three parts : Training , validation and Testing set, but for simplicity we will use only train and test with 20% in test size, and the rest for training.
+## Free-form of Visulaziation
+![](6)
+*Fig. 6. Results*
 
-### Optimization
+![](7)
+*Fig. 7. Results*
 
 Once we are done with price prediction, now it is time to decide which used cars are best to buy. In order to do that, the optimizer gets various parameter from the user. First, the avaiable budget and, second, a price margin that defines a range. The model creates a list of all possible selection of used cars using this information. Third and forth are the number miles that the buyers plan to drive the car annually and the number of years that the car is planned to be kept. These parameters help to determine the total cost of keeping the car. Value loss, maitainance costs and repair costs, all contribute to the total cost.
 
 Finally, total cost of keeping the assiciated with each car in the selection of possible cars in the price range will be predicted and given as a sortable list to the user.  
+## Improvement
+This project only consider, four factors (‘Model Year’, ‘Make’, ‘Model’,‘Mileage’) for predicting the next car for a new buyer. Besides, it is only considering the clean titled cars! However, we know there may be other factors involved in buying a better car such as: how the owner took care of car (such as oil change periods), what is the condition of breaks, tires, battey and so on. I eliminated these items because in the reality new buyers are not aware of those factors. If you visit the kbb website, you will anticipate the price of cars based on their general conditions such as "excellent condution" or "poor conditions." All in all, I would say this project is a good start for a broader and more precise type of project. 
 
 ## Licensing
 Authors, Acknowledgements, etc. You are more tham welcome to use the code. I appreciate if you refer to my github.
