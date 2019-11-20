@@ -33,10 +33,10 @@ Then, go to http://127.0.0.1:5000
 # Analysis
 ## Data Exploration and Exploratory Visualization
 Retrieving Data is the important step that should be done in the fastest possible way. For this purpose “BeautifulSoup” was used to scrape information of the listed cars on craigslist.org. The process for this task is quite simple, first we loop over the ads pages in order to collect the ads URLs by incrementing the page number parameter called oin the base URL. Once the URLs is collected, data about the car posted in that ad, such as : ‘Model Year’, ‘Make’, ‘Model’,‘Mileage’, ‘Price’ …, are stored in a SQL database. 
-![](2)
+![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual1.png?raw=true)
 *Fig. 2. ttt*
 
-![](3)
+![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual2.png?raw=true)
 *Fig. 3. ggg*
 
 ![](4)
