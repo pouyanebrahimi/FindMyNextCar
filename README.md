@@ -68,7 +68,7 @@ Usually we split our data into three parts : Training , validation and Testing s
 ## Results Visulaziation
 Figures 6 and 7 compare the price of actual and predicted cars using the machine learning algorithm. 
 
-![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual4.png?raw=true)
+![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Results1.png?raw=true)
 *Fig. 6. Actual and Predicted comparision using Mileage vs. Price*
 
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Results2.png?raw=true)
