@@ -33,16 +33,21 @@ Then, go to http://127.0.0.1:5000
 # Analysis
 ## Data Exploration and Exploratory Visualization
 Retrieving Data is the important step that should be done in the fastest possible way. For this purpose “BeautifulSoup” was used to scrape information of the listed cars on craigslist.org. The process for this task is quite simple, first we loop over the ads pages in order to collect the ads URLs by incrementing the page number parameter called oin the base URL. Once the URLs is collected, data about the car posted in that ad, such as : ‘Model Year’, ‘Make’, ‘Model’,‘Mileage’, ‘Price’ …, are stored in a SQL database. 
+
+Figures 2 and 3 respectively show that how the price of cars are related to the year and model of cars.Figure 2 shows that, for most cases, newer cars are more expensive. Figure 3 shows that most models of most companies are within certain ranges, except Ford F 350 and Cadillac Escalade. The range of prices for these two models are more than all other cars!
+
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual1.png?raw=true)
 *Fig. 2. ttt*
 
+![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual3.png?raw=true)
+*Fig. 3. ffff*
+
+Figure 4 shows that how year, mileage and price of cars are corolated to each other. As it is expected, newer cars has higher prices and the cars with higher mileages are cheaper. 
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual2.png?raw=true)
-*Fig. 3. ggg*
+*Fig. 4. ggg*
 
-![](4)
-*Fig. 4. ffff*
-
-![](5)
+Figure 5 depicts that how title status is related to the models. Apperantly more cars models are chosen for lien compared to clean titles!
+![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual4.png?raw=true)
 *Fig. 5. hhhh*
 
 ## Algorithm and Techniques 
@@ -62,10 +67,10 @@ The price prediction model is trained on various fetures: ‘Model Year’, ‘M
 
 Usually we split our data into three parts : Training , validation and Testing set, but for simplicity we will use only train and test with 20% in test size, and the rest for training.
 ## Free-form of Visulaziation
-![](6)
+![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual4.png?raw=true)
 *Fig. 6. Results*
 
-![](7)
+![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Results2.png?raw=true)
 *Fig. 7. Results*
 
 Once we are done with price prediction, now it is time to decide which used cars are best to buy. In order to do that, the optimizer gets various parameter from the user. First, the avaiable budget and, second, a price margin that defines a range. The model creates a list of all possible selection of used cars using this information. Third and forth are the number miles that the buyers plan to drive the car annually and the number of years that the car is planned to be kept. These parameters help to determine the total cost of keeping the car. Value loss, maitainance costs and repair costs, all contribute to the total cost.
