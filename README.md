@@ -28,7 +28,7 @@ Then, go to http://127.0.0.1:5000
 
 ## Project Screenshots:
 ![Fig. 1](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Screenshot.PNG?raw=true)
-{:.image-caption}
+{tttttt:.image-caption}
 *Fig. 1. App Screenshot*
 
 # Analysis
