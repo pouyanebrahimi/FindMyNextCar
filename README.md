@@ -1,22 +1,38 @@
 
 # Capstone Project
-Machine Learning Project            Pouyan Ebrahimi         Nov 19, 2019
+Machine Learning Project, Pouyan Ebrahimi, Nov 19, 2019
 
 <h1 align="center">Find My Next Car Project!</h1>
 
-
-<p align="center">
-Find My Next Car Project!
-</p>
-
 # Definition
 ## Project Overview
+The goal of this project is to employ Data Science to build and deploy a Machine Learning Model that can predict a car price, and ultimately suggest buyers a list of best value used cars they can buy.
+
 ## Problem Statement 
-## Metrics
+Suggest the best cars that a person can buy based on some criteria. 
+
+## Metrics or Scoring
+There are different methods for scoring the machine learning algirthms. Here I used accuracy_score, mean_squared_error, and cross_val_score to score the results of machine learning algorithm.
+ 
+## Installations
+Please install python (python-3.7.1) and import following packages and libraries: bokeh, Click==7.0, dill==0.2.9, Flask==1.0.2, itsdangerous==1.1.0, Jinja2==2.10
+MarkupSafe==1.1.0, numpy==1.16.1, pandas==0.24.1, python-dateutil==2.8.0, pytz==2018.9, scikit-learn==0.20.2, scipy==1.2.1, six==1.12.0
+sklearn==0.0, Werkzeug==0.14.1, gunicorn==19.9.0
+
+You should also run "run: pip install -r requirements.txt" in the shell to install all other required packages
+
+Run the following command in the app's directory to run your web app.
+    `python app.py`
+
+Then, go to http://127.0.0.1:5000
+
+## Project Screenshots:
+![Fig. 1](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Screenshot.PNG?raw=true)
 
 # Analysis
-## Data Exploration
-## Exploratory Visualization
+## Data Exploration and Exploratory Visualization
+![image2](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Screenshot.PNG?raw=true)
+![image3](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Screenshot.PNG?raw=true)
 ## Algorithm and Techniques 
 ## Benchmark
 
@@ -32,23 +48,8 @@ Find My Next Car Project!
 ## Improvement
 
 
-## Installations
-Please install python (python-3.7.1) and import following packages and libraries: bokeh, Click==7.0, dill==0.2.9, Flask==1.0.2, itsdangerous==1.1.0, Jinja2==2.10
-MarkupSafe==1.1.0, numpy==1.16.1, pandas==0.24.1, python-dateutil==2.8.0, pytz==2018.9, scikit-learn==0.20.2, scipy==1.2.1, six==1.12.0
-sklearn==0.0, Werkzeug==0.14.1, gunicorn==19.9.0
 
-You should also run "run: pip install -r requirements.txt" in the shell to install all other required packages
 
-Run the following command in the app's directory to run your web app.
-    `python app.py`
-
-Then, go to http://127.0.0.1:5000
-
-## Project Screenshots:
-![image1](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Screenshot.PNG?raw=true)
-
-## Project Motivation
-The goal of this project is to employ Data Science to build and deploy a Machine Learning Model that can predict a car price, and ultimately suggest buyers a list of best value used cars they can buy.
 
 ## Data Descriptions
 Retrieving Data is the important step that should be done in the fastest possible way. For this purpose “BeautifulSoup” was used to scrape information of the listed cars on craigslist.org. The process for this task is quite simple, first we loop over the ads pages in order to collect the ads URLs by incrementing the page number parameter called oin the base URL. Once the URLs is collected, data about the car posted in that ad, such as : ‘Model Year’, ‘Make’, ‘Model’,‘Mileage’, ‘Price’ …, are stored in a SQL database. The next step is the most time consuming in every Data Science process which is Data Preprocessing & Cleansing. Information about 2 Million cars were scraped initially, which around 800,000 healthy pages were retreieved from.
