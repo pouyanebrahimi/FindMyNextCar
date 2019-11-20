@@ -54,23 +54,18 @@ Figure 5 depicts that how title status is related to the models. Apperantly more
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual4.png?raw=true)
 *Fig. 5. Vilion plot: Car Title vs. Model*
 
-## Algorithm and Techniques 
-## Benchmark
-
-# Methodology
-## Data Processing
+# Implementation and Data Processing
 The next step is the most time consuming in every Data Science process which is Data Preprocessing & Cleansing. Information about 2 Million cars were scraped initially, which around 800,000 healthy pages were retreieved from.
 
 Armed with this information, you can make the necessary changes to your inventory. For example, only cars with a "clean" title were used in the modeling step.
 
 Now we came to the main task in all this process, which is Data Modeling, for this purpose a Multi-layer Perceptron (MLP) regressor Machine Learning models dedicated for Regression problem. r2_score for out-of-sample testing was 0.88.
-## Justification
 
 # Conclusion
 The price prediction model is trained on various fetures: ‘Model Year’, ‘Make’, ‘Model’,‘Mileage’. The corrolation matrix suggested that,‘Model Year’, not surprisingly, has the most contribution to the price prediction. StandardScalar was used to normalize ‘Model Year’ and ‘Mileage’. In order to make rest of the features numerical, so that they will fit into our model, OneHotEncoder categorical variable transformation was used.
 
 Usually we split our data into three parts : Training , validation and Testing set, but for simplicity we will use only train and test with 20% in test size, and the rest for training.
-## Free-form of Visulaziation
+## Results Visulaziation
 Figures 6 and 7 compare the price of actual and predicted cars using the machine learning algorithm. 
 
 ![](https://github.com/pouyanebrahimi/FindMyNextCar/blob/master/Visual4.png?raw=true)
